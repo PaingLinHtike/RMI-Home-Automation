@@ -8,6 +8,7 @@ import java.rmi.registry.Registry;
 public class RMIServer {
     public static void main(String[] args) {
         try {
+            System.setProperty("java.rmi.server.hostname", "34.142.130.38");
             Registry registry = LocateRegistry.createRegistry(1099);
 
             EnergyService energy = new EnergyServiceImpl();
