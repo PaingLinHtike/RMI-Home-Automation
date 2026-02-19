@@ -9,7 +9,7 @@ public class SecurityServiceImpl extends UnicastRemoteObject implements Security
     private boolean locked = false;
 
     protected SecurityServiceImpl() throws RemoteException {
-        super();
+        super(5002);
     }
 
     public String lockDoor() throws RemoteException {
