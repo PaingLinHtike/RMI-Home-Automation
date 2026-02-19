@@ -10,7 +10,7 @@ public class EnergyServiceImpl extends UnicastRemoteObject implements EnergyServ
     private final double RATE = 0.12;   // price per unit
 
     protected EnergyServiceImpl() throws RemoteException {
-        super();
+        super(5001);
     }
 
     public synchronized void addUsage(String device) throws RemoteException {
