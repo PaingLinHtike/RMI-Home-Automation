@@ -9,7 +9,7 @@ public class RMIClient {
 
     public static void main(String[] args) {
         try {
-            Registry registry = LocateRegistry.getRegistry("localhost", 1099);
+            Registry registry = LocateRegistry.getRegistry("34.177.96.217", 1099);
 
             DeviceService device = (DeviceService) registry.lookup("DeviceService");
             EnergyService energy = (EnergyService) registry.lookup("EnergyService");

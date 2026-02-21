@@ -17,7 +17,7 @@ public class DeviceServiceImpl extends UnicastRemoteObject implements DeviceServ
     private SecurityService security;
 
     protected DeviceServiceImpl(EnergyService energy, SecurityService security) throws RemoteException {
-        super();
+        super(5003);
         this.energy = energy;
         this.security = security;
 
